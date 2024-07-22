@@ -1,6 +1,6 @@
-# Aider: AI pair programming in your terminal
+# Aider in Docker
 
-This is a Dockerfile and an example how to alias [aider](https://github.com/paul-gauthier/aider) it, to avoid python lib conflicts.
+This is a Dockerfile and an example how to alias [aider](https://github.com/paul-gauthier/aider), to avoid python lib conflicts.
 Original @ https://github.com/paul-gauthier/aider, please check there for all usage docs.
 
 See the [installation instructions and other documentation](https://aider.chat/docs/) for more details.
