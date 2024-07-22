@@ -10,18 +10,30 @@ $ pip install aider-chat
 
 ### Option 2: Docker
 
-#### Docker run command using $(PWD)
+#### Build local image
+
+First build local image
+
+```bash
+./build.sh
+```
+
+#### Docker run command
+
+Now you can use the command to run. Please either use ANTHROPIC_API_KEY
+or OPENAI_API_KEY. You need to set one of them with 'export ANTHROPIC_API_KEY=<key>' before.
+
 ```bash
 docker run -it --rm \
   -v $(PWD):/app \
-  -e ANTHROPIC_API_KEY=your-anthropic-key \
-  -e OPENAI_API_KEY=your-openai-key \
+  -e ANTHROPIC_API_KEY \
+  -e OPENAI_API_KEY \
   aider-image
 ```
 
 #### Alias for .zshrc
 ```bash
-alias aider-docker='docker run -it --rm -v $(PWD):/app -e ANTHROPIC_API_KEY -e OPENAI_API_KEY aider-image'
+alias aider='docker run -it --rm -v $(PWD):/app -e ANTHROPIC_API_KEY -e OPENAI_API_KEY aider-image'
 ```
 
 ## Usage
