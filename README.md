@@ -1,5 +1,10 @@
 # Aider: AI pair programming in your terminal
 
+This is a Dockerfile and an example how to alias [aider](https://github.com/paul-gauthier/aider) it, to avoid python lib conflicts.
+Original @ https://github.com/paul-gauthier/aider, please check there for all usage docs.
+
+See the [installation instructions and other documentation](https://aider.chat/docs/) for more details.
+
 ## Installation
 
 ### Option 1: Pip Install
@@ -57,22 +62,6 @@ $ aider
 
 See the [installation instructions and other documentation](https://aider.chat/docs/) for more details.
 
-## Features
-
-- Run aider with the files you want to edit: `aider <file1> <file2> ...`
-- Ask for changes:
-  - Add new features or test cases
-  - Describe a bug
-  - Paste in an error message or GitHub issue URL
-  - Refactor code
-  - Update docs
-- Aider will edit your files to complete your request
-- Aider automatically git commits changes with a sensible commit message
-- Works with most popular languages: python, javascript, typescript, php, html, css, and more...
-- Works best with GPT-4 & Claude 3.5 Sonnet and can connect to almost any LLM
-- Can edit multiple files at once for complex requests
-- Uses a map of your entire git repo, which helps it work well in larger codebases
-- Edit files in your editor while chatting with aider, and it will always use the latest version. Pair program with AI
 - Add images to the chat (GPT-4, Claude 3.5 Sonnet, etc)
 - Add URLs to the chat and aider will read their content
 - Code with your voice
